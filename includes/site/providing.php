@@ -1,7 +1,9 @@
-<div class="providing-container" style="background: #000">
+<div class="providing-container" style="background: linear-gradient(to left, #262731, #1d1e24);">
     <div class="container">
-        <div>
-            <h3></h3>
+        <div class="p-3 mt-3">
+            <div class="row">
+
+            </div>
         </div>
     </div>
 
