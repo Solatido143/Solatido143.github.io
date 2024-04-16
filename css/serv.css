@@ -1,8 +1,4 @@
 /* Global styles */
-* {
-    box-sizing: border-box;
-    word-wrap: break-word;
-}
 
 .hide {
     display: none !important;

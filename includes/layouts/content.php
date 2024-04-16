@@ -3,7 +3,7 @@
 include ('includes/layouts/navbar.php');
 ?>
 
-<div class="vh-100">
+<div class="particles-view">
     <div id="particles-js"></div>
 
     <span class="top-index-content text-color">
@@ -17,11 +17,11 @@ include ('includes/layouts/navbar.php');
 
 
 <!-- Overview Tab -->
-<div class="overview" style="background: linear-gradient(to left, #262731, #1d1e24);">
+<div class="overview p-5" id="aboutUs" style="background: linear-gradient(to left, #262731, #1d1e24);">
 
-    <div class="overview-header">
+    <div class="overview-header mb-3">
 
-        <div class="container p-3 py-5">
+        <div class="container">
 
             <div class="text-center">
 
