@@ -1,6 +1,6 @@
 <!--gallery-->
 <div class="gallery-wrapper">
-    <div class="content">
+    <div class="content-gallery">
         <div class="gallery full">
             <div class="swiper-container">
                 <div class="swiper-wrapper hello">
