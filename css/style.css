@@ -92,10 +92,12 @@ header {
 	align-items: center;
 }
 .logo {
+	
 	font-weight: bold;
 	font-size: 1.25rem;
 	padding-bottom: 0.5em;
 }
+
 nav ul {
 	list-style: none;
 	display: flex;

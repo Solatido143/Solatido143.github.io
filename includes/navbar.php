@@ -1,6 +1,8 @@
 <header>
     <div class="container">
-        <div class="logo">Res Nav</div>
+        <div class="logo">
+            <img src="image/logo.png"width="150px" height="35px"></img>
+        </div>
         <nav id="menu">
             <ul>
                 <li><a href="#">Home</a></li>
