@@ -1,6 +1,6 @@
 <!-- Landing -->
 <?php 
-include ('includes/navbar.php');
+include ('includes/layouts/navbar.php');
 ?>
 
 <div class="vh-100">
@@ -14,9 +14,6 @@ include ('includes/navbar.php');
     </span>
     
 </div>
-
-
-
 
 
 <!-- Overview Tab -->
@@ -96,6 +93,6 @@ include ('includes/navbar.php');
 
 
 <?php
-include ('includes/services.php');
-include ('includes/providing.php');
+include ('includes/site/services.php');
+include ('includes/site/providing.php');
 ?>
