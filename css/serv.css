@@ -8,33 +8,13 @@
     display: none !important;
 }
 
-body {
+.gallery-wrapper {
     margin: 0;
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
     font-weight: 400;
-    color: #fff;
     line-height: normal;
     letter-spacing: normal;
-}
-
-/* Loader styles */
-.loader {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 3;
-    background: linear-gradient(to left, #262731, #1d1e24);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.loader svg path,
-.loader svg rect {
-    fill: #ed1b28;
 }
 
 /* Gallery styles */
@@ -52,7 +32,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     padding: 3vh 0;
-    background: linear-gradient(to left, #262731, #1d1e24);
+    background: #000;
 }
 
 .gallery-wrapper .content .gallery.full {

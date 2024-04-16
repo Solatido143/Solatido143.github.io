@@ -11,6 +11,23 @@
     <script src="https://kit.fontawesome.com/cf9a2f60ee.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/serv.css">
+
+    <style>
+        .card {
+            background: linear-gradient(to left, #262731, #1d1e24);
+            color: white;
+        }
+        .crds>* {
+            margin: 20px auto;
+        }
+
+        @media (min-width: 1200px) {
+            .overview {
+                height: 100vh;
+            }
+        }
+
+    </style>
 </head>
 
 <body>
