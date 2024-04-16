@@ -20,8 +20,8 @@ include ('includes/navbar.php');
 
 <!-- Overview Tab -->
 <div class="overview-header" style="background-color: #000000">
-    <div class="container p-3">
-        <div class="card text-center">
+    <div class="container p-3 py-5">
+        <div class="text-center">
             <div class="card-body">
                 <h5 class="card-title">COMPANY OVERVIEW</h5>
                 <p class="card-text">Established in 2022 to cater the needs of discerning technologically-empowered
