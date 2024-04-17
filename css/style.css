@@ -1,28 +1,34 @@
 :root {
 	--text-color: #ff2424;
 }
+
 ::-webkit-scrollbar {
 	width: 10px;
 	/* Adjust the width as needed */
 }
+
 ::-webkit-scrollbar-thumb {
 	background: #888;
 	/* Scroll thumb color */
 	border-radius: 5px;
 }
+
 ::-webkit-scrollbar-track {
 	background: #f1f1f1;
 	/* Track color */
 }
+
 ::-moz-scrollbar {
 	width: 10px;
 	/* Adjust the width as needed */
 }
+
 ::-moz-scrollbar-thumb {
 	background: #888;
 	/* Scroll thumb color */
 	border-radius: 5px;
 }
+
 ::-moz-scrollbar-track {
 	background: #f1f1f1;
 	/* Track color */
@@ -35,16 +41,18 @@
 	padding: 0;
 	box-sizing: border-box;
 	z-index: 0;
-    word-wrap: break-word;
+	word-wrap: break-word;
 }
+
 /* Reset margin and specify base font */
 body {
 	margin: 0;
 	padding: 0;
 	font: normal 75% Arial, Helvetica, sans-serif;
 	overflow-x: hidden;
-	color: #fff;	
+	color: #fff;
 }
+
 .text-color {
 	color: var(--text-color);
 }
@@ -57,6 +65,7 @@ body {
 canvas {
 	display: block;
 }
+
 /* Particles.js container */
 #particles-js {
 	position: absolute;
@@ -88,6 +97,7 @@ canvas {
 	left: 40%;
 	transform: translate(-50%, -50%);
 }
+
 header {
 	background: #000000;
 	width: 100%;
@@ -100,7 +110,7 @@ header {
 }
 
 .logo {
-	
+
 	font-weight: bold;
 	font-size: 1.25rem;
 }
@@ -112,20 +122,24 @@ nav ul {
 	font-size: 1rem;
 	margin-bottom: 0;
 }
+
 a {
 	color: inherit;
 	text-decoration: none;
 	width: 100%;
 	height: 100%;
 }
+
 nav ul li {
 	border-bottom: 2px solid transparent;
 	transition: all 200ms ease;
 	cursor: pointer;
 }
+
 nav ul li:hover {
 	border-bottom: 2px solid #ff2424;
 }
+
 #burger {
 	display: none;
 }
@@ -139,10 +153,12 @@ nav ul li:hover {
 		cursor: pointer;
 		margin-bottom: 0.5em;
 	}
+
 	#burger:focus {
 		border: none;
 		outline: none;
 	}
+
 	nav {
 		position: absolute;
 		right: 0;
@@ -154,10 +170,12 @@ nav ul li:hover {
 		clip-path: circle(0% at 100% 0);
 		transition: all 500ms ease-in-out;
 	}
+
 	nav.show {
 		clip-path: circle(200% at 100% 0);
 		transition-duration: 300ms;
 	}
+
 	nav ul {
 		flex-direction: column;
 		padding-left: 0;
@@ -173,17 +191,363 @@ nav ul li:hover {
 	background-color: #000;
 	color: white;
 }
+
 .crds>* {
 	margin: 20px auto;
 }
 
-.overview, .providing {
+.overview,
+.providing {
 	background: linear-gradient(to left, #262731, #1d1e24);
 }
-
-@media (min-width: 992px) {
-	.overview{
+/* 
+@media (min-width: 1200px) {
+	.overview {
 		height: 100vh;
+	}
+} */
+
+.img {
+	width: 100%;
+	height: auto;
+	margin: 3em 0;
+
+}
+
+.location-icon {
+	position: absolute;
+}
+
+.fa-location-dot {
+	cursor: pointer;
+}
+
+.location-name {
+	display: none;
+}
+
+.location-name-text-left {
+	display: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.location-name-text-bottom {
+	display: none;
+    position: absolute;
+	bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.location-icon:hover .location-name-text-left {
+    display: inline;
+}
+.location-icon:hover .location-name-text-bottom {
+    display: inline;
+}
+.location-icon:hover .location-name {
+    display: inline;
+}
+
+/* Luzon */
+.pangasinan {
+	top: 23.5%;
+	left: 37.5%;
+}
+
+.tarlac {
+	top: 26.5%;
+	left: 39.5%;
+}
+
+.pampanga {
+	top: 28.5%;
+	left: 39.5%;
+}
+
+.bulacan {
+	top: 29.5%;
+	left: 41.5%;
+}
+
+.bicol {
+	top: 37%;
+	left: 60%;
+}
+
+.bataan {
+	top: 31%;
+	left: 39%;
+}
+
+.batangas {
+	top: 36.5%;
+    left: 43.4%;
+}
+
+.lucena {
+	top: 35%;
+	left: 47.5%;
+}
+
+.mindoro {
+	top: 41.5%;
+	left: 44%;
+}
+
+.palawan {
+	top: 59.5%;
+	left: 26%;
+}
+
+.palawan {
+	top: 57.5%;
+	left: 26%;
+}
+
+.ilocos {
+	top: 18.5%;
+	left: 39.3%;
+}
+
+.baguio {
+	top: 20.5%;
+	left: 40.5%;
+}
+
+.cavite {
+	top: 34%;
+	left: 42%;
+}
+
+.laguna {
+	top: 33.5%;
+	left: 45.5%;
+}
+
+.ncr {
+	top: 31.5%;
+	left: 43.5%;
+}
+
+/* Visayas */
+.bacolod {
+	top: 54%;
+	left: 57.2%;
+}
+
+.cebu {
+	top: 56%;
+	left: 64%;
+}
+
+.capiz {
+	top: 50%;
+	left: 55%;
+}
+
+.iloilo {
+	top: 53.6%;
+	left: 54.3%;
+}
+
+.tacloban {
+	top: 50.5%;
+	left: 72%;
+}
+
+/* Mindanao */
+.cagayandeoro {
+	top: 66.3%;
+	left: 69%;
+}
+
+.davao {
+	top: 73.5%;
+	left: 76%;
+}
+
+.cotabato {
+	top: 73.3%;
+	left: 66.2%;
+}
+
+.dipolog {
+	top: 66%;
+	left: 60%;
+}
+
+.zamboanga {
+	top: 74.3%;
+	left: 51%;
+}
+
+.generalsantos {
+	top: 79%;
+	left: 72.8%;
+}
+
+/* sm */
+@media (min-width: 576px) {
+	.cagayandeoro {
+		top: 66%;
+		left: 69.8%;
+	}
+	.zamboanga {
+		top: 73.3%;
+    	left: 51%;
+	}
+	.cebu {
+		top: 55%;
+    	left: 64%;
+	}
+	.iloilo {
+		top: 53.2%;
+    	left: 54.2%;
 	}
 }
 
+/* md */
+@media (min-width: 768px) {
+	.iloilo {
+		top: 54.2%;
+    	left: 54.5%;
+	}
+	.bacolod {
+		top: 54.5%;
+		left: 57.8%;
+	}
+	.cebu {
+		top: 56.4%;
+		left: 64.7%;
+	}
+	.cagayandeoro {
+		top: 67.5%;
+		left: 69.8%;
+	}
+
+	.palawan {
+		top: 60%;
+		left: 26%;
+	}
+
+	.lucena {
+		top: 35.3%;
+		left: 48%;
+	}
+
+	.generalsantos {
+		top: 81%;
+		left: 73.3%;
+	}
+	.davao {
+		top: 75%;
+    	left: 77%;
+	}
+	.dipolog {
+		top: 67.1%;
+    	left: 60%;
+	}
+	.zamboanga {
+		top: 75.3%;
+    	left: 51.3%;
+	}
+	.tacloban {
+		top: 51.2%;
+		left: 72.7%;
+	}
+}
+
+/* lg */
+@media (min-width: 992px) {
+	.batangas {
+		top: 36.7%;
+    	left: 43.8%;
+	}
+	.iloilo {
+		top: 55%;
+    	left: 54.8%;
+	}
+	.bacolod {
+		top: 55.5%;
+    	left: 58%;
+	}
+	.cebu {
+		top: 57.1%;
+		left: 65.3%;
+	}
+	.tacloban {
+		top: 52.2%;
+    	left: 73.3%;
+	}
+	.zamboanga {
+		top: 76.8%;
+    	left: 51.7%;
+	}
+
+	.cagayandeoro {
+		top: 68.5%;
+		left: 70.4%;
+	}
+
+	.generalsantos {
+		top: 82.5%;
+		left: 73.9%;
+	}
+
+	.davao {
+		top: 76.5%;
+		left: 77.7%;
+	}
+	.dipolog {
+		top: 68.1%;
+    	left: 60.5%;
+	}
+	.capiz {
+		top: 51%;
+		left: 55%;
+	}
+}
+
+/* xl */
+@media (min-width: 1200px) {
+	.iloilo {
+		top: 55.3%;
+    	left: 55%;
+	}
+	.bacolod {
+		top: 55.5%;
+    	left: 58.5%;
+	}
+	.cagayandeoro {
+		top: 69.6%;
+    	left: 70.4%;
+	}
+	.generalsantos {
+		top: 83.2%;
+    	left: 74.3%;
+	}
+	.davao {
+		top: 77%;
+    	left: 78%;
+	}
+	.dipolog {
+		top: 69.3%;
+    	left: 60.9%;
+	}
+}
+
+/* xxl */
+@media (min-width: 1400px) {
+	.zamboanga {
+		top: 77.8%;
+    	left: 51.7%;
+	}
+	.iloilo {
+		top: 55.6%;
+    	left: 55.3%;
+	}
+
+}

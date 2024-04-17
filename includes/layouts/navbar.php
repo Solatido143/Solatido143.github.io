@@ -9,7 +9,9 @@
                     <li><a href="#">Home</a></li>
                     <li><a href="#companyOverview">About</a></li>
                     <li><a href="#services">Services</a></li>
-                    <li><a href="#">Products</a></li>
+                    <li><a href="#providing">Providing</a></li>
+                    <li><a href="#">Partners</a></li>
+                    <li><a href="#">Clients</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
