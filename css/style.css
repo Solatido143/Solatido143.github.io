@@ -200,12 +200,6 @@ nav ul li:hover {
 .providing {
 	background: linear-gradient(to left, #262731, #1d1e24);
 }
-/* 
-@media (min-width: 1200px) {
-	.overview {
-		height: 100vh;
-	}
-} */
 
 .img {
 	width: 100%;
@@ -223,33 +217,30 @@ nav ul li:hover {
 }
 
 .location-name {
-	display: none;
+    position: absolute;
+	visibility: hidden;
+	opacity: 0;
+    transition: opacity 0.3s ease-in-out;
 }
-
 .location-name-text-left {
-	display: none;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
 }
-
 .location-name-text-bottom {
-	display: none;
     position: absolute;
 	bottom: -50px;
     left: 50%;
     transform: translateX(-50%);
 }
 
-.location-icon:hover .location-name-text-left {
-    display: inline;
-}
-.location-icon:hover .location-name-text-bottom {
-    display: inline;
-}
+.location-icon:hover .location-name-text-left,
+.location-icon:hover .location-name-text-bottom,
 .location-icon:hover .location-name {
-    display: inline;
+    visibility: visible;
+    opacity: 1;
 }
+
 
 /* Luzon */
 .pangasinan {
@@ -549,5 +540,39 @@ nav ul li:hover {
 		top: 55.6%;
     	left: 55.3%;
 	}
+}
 
+.luzviminda {
+	position: absolute;
+	margin: 0;
+}
+.luzviminda-luzon {
+	cursor: pointer;
+	top: 30.6%;
+    left: 9.3%;
+}
+.luzviminda-visayas {
+	cursor: pointer;
+	top: 47.8%;
+    left: 83.7%;
+}
+.luzviminda-mindanao {
+	cursor: pointer;
+	top: 69.6%;
+    left: 35.3%;
+}
+
+.luzviminda-luzon:hover ~ .location-icon.luzon .location-name {
+    opacity: 1;
+    visibility: visible;
+}
+
+.luzviminda-visayas:hover ~ .location-icon.visayas .location-name {
+    opacity: 1;
+    visibility: visible;
+}
+
+.luzviminda-mindanao:hover ~ .location-icon.mindanao .location-name {
+    opacity: 1;
+    visibility: visible;
 }

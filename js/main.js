@@ -152,15 +152,11 @@ function adjustHeight() {
   
   companyOverview.style.paddingTop = newPaddingTop + 'px';
   companyOverview.style.paddingBottom = newPaddingTop + 'px';
-
   services.style.paddingTop = newPaddingTop + 'px';
   services.style.paddingBottom = newPaddingTop + 'px';
-
   providing.style.paddingTop = newPaddingTop + 'px';
   providing.style.paddingBottom = newPaddingTop + 'px';
   
-
   console.log('New padding top for companyOverview:', newPaddingTop, 'px');
 }
-
 adjustHeight();
