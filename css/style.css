@@ -68,6 +68,20 @@ canvas {
 	background-size: cover;
 	background-position: 50% 50%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .top-index-content {
 	position: absolute;
 	top: 50%;
@@ -80,7 +94,7 @@ header {
 	box-shadow: rgba(50, 50, 93, 0.8) 0px 50px 100px -20px,
 		rgba(0, 0, 0, 0.8) 0px 30px 60px -30px;
 	color: #ffffff;
-	position: relative;
+	position: sticky;
 	top: 0;
 	z-index: 99;
 }
@@ -151,5 +165,25 @@ nav ul li:hover {
 }
 
 .particles-view {
-	height: calc(100vh - 83px);
+	height: 100vh;
+	position: relative;
 }
+
+.card {
+	background-color: #000;
+	color: white;
+}
+.crds>* {
+	margin: 20px auto;
+}
+
+.overview, .providing {
+	background: linear-gradient(to left, #262731, #1d1e24);
+}
+
+@media (min-width: 992px) {
+	.overview{
+		height: 100vh;
+	}
+}
+

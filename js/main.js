@@ -1,4 +1,4 @@
-(function() {
+(function () {
   particlesJS("particles-js", {
     particles: {
       number: {
@@ -110,33 +110,6 @@
     retina_detect: true,
   });
 
-// Initialize stats.js for performance monitoring
-  var count_particles, stats, update;
-  stats = new Stats();
-  stats.setMode(0);
-  stats.domElement.style.position = 'absolute';
-  stats.domElement.style.left = '0px';
-  stats.domElement.style.top = '0px';
-  document.body.appendChild(stats.domElement);
-
-// Reference the particle count element
-  count_particles = document.querySelector('.js-count-particles');
-
-// Define the update function for animation frame updates
-  update = function() {
-    stats.begin();
-    stats.end();
-
-    if (window.pJSDom[0] && window.pJSDom[0].pJS && window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
-      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
-    }
-
-    requestAnimationFrame(update);
-  };
-
-// Start the animation frame updates
-  requestAnimationFrame(update);
-
 
 }).call(this);
 
@@ -149,19 +122,45 @@
 
 
 function menuShow() {
-	document.getElementById("menu").classList.toggle("show");
+  document.getElementById("menu").classList.toggle("show");
 }
 function menuClose() {
-	document.getElementById("menu").classList.remove("show");
+  document.getElementById("menu").classList.remove("show");
 }
 
 
+function getHeaderHeight() {
+  var headerHeight = document.getElementById('header').offsetHeight;
+  return headerHeight;
+}
 
+function adjustHeight() {
+  var headerHeight = getHeaderHeight();
+  var newViewHeight = `calc(100vh - ${headerHeight}px)`;
+  document.getElementById('particlesView').style.height = newViewHeight;
 
+  var companyOverview = document.getElementById('companyOverview');
+  var services = document.getElementById('services');
+  var providing = document.getElementById('providing');
 
+    
+  var currentPaddingTop = window.getComputedStyle(companyOverview).paddingTop;
+  
+  currentPaddingTop = parseInt(currentPaddingTop, 10);
+  
+  var newPaddingTop = currentPaddingTop + headerHeight;
+  
+  companyOverview.style.paddingTop = newPaddingTop + 'px';
+  companyOverview.style.paddingBottom = newPaddingTop + 'px';
 
+  services.style.paddingTop = newPaddingTop + 'px';
+  services.style.paddingBottom = newPaddingTop + 'px';
 
+  providing.style.paddingTop = newPaddingTop + 'px';
+  providing.style.paddingBottom = newPaddingTop + 'px';
+  
 
+  console.log('New padding top for companyOverview:', newPaddingTop, 'px');
+}
 
-
-
+adjustHeight();

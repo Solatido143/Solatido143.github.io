@@ -1,4 +1,4 @@
-<header class="py-3">
+<header class="py-3" id="header">
     <div class="container">
         <div class="nav justify-content-between align-items-center">
             <div class="logo">
@@ -7,7 +7,7 @@
             <nav id="menu">
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#aboutUs">About</a></li>
+                    <li><a href="#companyOverview">About</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#">Products</a></li>
                     <li><a href="#">Contact</a></li>
