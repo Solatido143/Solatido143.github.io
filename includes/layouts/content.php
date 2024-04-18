@@ -1,18 +1,16 @@
 <!-- Landing -->
 <?php 
-include ('includes/layouts/navbar.php');
+include_once ('includes/layouts/navbar.php');
 ?>
 
 <div class="particles-view" id="particlesView">
     <div id="particles-js"></div>
-
     <span class="top-index-content text-color">
         <h1>E-CMV I.T. Corp</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis malesuada eros. 
             Proin varius arcu enim, at ullamcorper mi posuere id. Integer et rhoncus ligula, 
             sit amet tincidunt libero.</p>
     </span>
-    
 </div>
 
 
@@ -84,8 +82,11 @@ include ('includes/layouts/navbar.php');
 
 
 <?php
-include ('includes/site/services.php');
-include ('includes/site/providing.php');
-include ('includes/site/clientele.php');
-include ('includes/site/footer.php');
+include_once ('includes/site/services.php');
+
+include_once ('includes/site/providing.php');
+
+include_once ('includes/site/clientele.php');
+
+include_once ('includes/site/footer.php');
 ?>

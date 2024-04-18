@@ -1,7 +1,7 @@
 <?php
-include ('includes/layouts/main.php');
+include_once ('includes/layouts/main.php');
 
-include ('includes/layouts/content.php');
+include_once ('includes/layouts/content.php');
 
-include ('includes/layouts/footer.php');
+include_once ('includes/layouts/footer.php');
 ?>

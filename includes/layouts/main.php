@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 
     <script src="https://kit.fontawesome.com/cf9a2f60ee.js" crossorigin="anonymous"></script>
+    
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/serv.css">
     <link rel="stylesheet" href="css/footer.css">
