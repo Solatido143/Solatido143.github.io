@@ -4,13 +4,13 @@ $(document).ready(function() {
         function() {
             var iconElement = $(this).find("i.fa-circle-dot");
             if (iconElement.length > 0) {
-                iconElement.removeClass("fa-circle-dot").addClass("fa-location-dot fs-5");
+                iconElement.removeClass("fa-circle-dot").addClass("fa-location-dot fs-4");
             }
         },
         function() {
             var iconElement = $(this).find("i.fa-location-dot");
             if (iconElement.length > 0) {
-                iconElement.removeClass("fa-location-dot fs-5").addClass("fa-circle-dot");
+                iconElement.removeClass("fa-location-dot fs-4").addClass("fa-circle-dot");
             }
         }
     );

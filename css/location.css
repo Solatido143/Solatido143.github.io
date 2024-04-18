@@ -1,5 +1,3 @@
-/* Surigao, isabela, tuguegarao capiz into roxas */
-
 .img {
     width: 100%;
     height: auto;
@@ -49,6 +47,10 @@
     top: 23.5%;
     left: 37.5%;
 }
+.surigao {
+    top: 60.5%;
+    left: 77.5%;
+}
 
 .tarlac {
     top: 26.5%;
@@ -63,6 +65,15 @@
 .bulacan {
     top: 29.5%;
     left: 41.5%;
+}
+
+.tuguegarao {
+    top: 12%;
+    left: 48%;
+}
+.isabela {
+    top: 19%;
+    left: 50%;
 }
 
 .bicol {
@@ -270,6 +281,10 @@
 
 /* lg */
 @media (min-width: 992px) {
+    .surigao {
+        top: 60.9%;
+        left: 77.9%;
+    }
     .batangas {
         top: 36.7%;
         left: 43.8%;
@@ -316,7 +331,7 @@
     }
 
     .dipolog {
-        top: 68.1%;
+        top: 68.6%;
         left: 60.5%;
     }
 
@@ -361,6 +376,10 @@
 
 /* xxl */
 @media (min-width: 1400px) {
+    .surigao {
+        top: 61.5%;
+        left: 77.9%;
+    }
     .zamboanga {
         top: 77.8%;
         left: 51.7%;
