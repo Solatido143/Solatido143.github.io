@@ -553,13 +553,26 @@ nav ul li:hover {
 }
 .luzviminda-visayas {
 	cursor: pointer;
-	top: 47.8%;
-    left: 83.7%;
+	top: 40.8%;
+    left: 67.7%;
 }
 .luzviminda-mindanao {
 	cursor: pointer;
 	top: 69.6%;
     left: 35.3%;
+}
+
+@media (min-height: 576px) {
+	.luzviminda-visayas {
+		top: 41.8%;
+    	left: 69.7%;
+	}
+}
+@media (min-height: 1400px) {
+	.luzviminda-visayas {
+		top: 43%;
+		left: 80%;
+	}
 }
 
 .luzviminda-luzon:hover ~ .location-icon.luzon .location-name {

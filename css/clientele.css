@@ -1,0 +1,47 @@
+body{
+  background-color: #21222a;
+  /* #dbdada */
+}
+    .owl-buttons {
+    
+  display: none;
+}
+.owl-carousel:hover .owl-buttons {
+
+  display: block;
+}
+
+.owl-item {
+  text-align: center;
+  
+}
+
+
+.owl-theme .owl-controls .owl-buttons div {
+  background: transparent;
+  color: #978688;
+  font-size: 40px;
+  line-height: 300px;
+  margin: 0;
+  padding: 0 60px;
+  position: absolute;
+  top: 0;
+}
+.owl-theme .owl-controls .owl-buttons .owl-prev {
+  left: 0;
+  margin-top: -85px;
+  padding-left: 20px;
+}
+.owl-theme .owl-controls .owl-buttons .owl-next {
+  right: 0;
+  margin-top: -85px;
+  padding-right: 20px;
+}
+  
+
+#owl-example .client img {
+  max-height: 100px; /* Adjust the maximum height as needed */
+  max-width: 100px; /* Adjust the maximum width as needed */
+  width: auto;
+  height: auto;
+}

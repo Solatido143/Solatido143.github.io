@@ -1,4 +1,4 @@
-(function () {
+(function() {
   particlesJS("particles-js", {
     particles: {
       number: {
@@ -110,7 +110,6 @@
     retina_detect: true,
   });
 
-
 }).call(this);
 
 
@@ -157,6 +156,5 @@ function adjustHeight() {
   providing.style.paddingTop = newPaddingTop + 'px';
   providing.style.paddingBottom = newPaddingTop + 'px';
   
-  console.log('New padding top for companyOverview:', newPaddingTop, 'px');
 }
 adjustHeight();

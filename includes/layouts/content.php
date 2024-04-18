@@ -86,4 +86,6 @@ include ('includes/layouts/navbar.php');
 <?php
 include ('includes/site/services.php');
 include ('includes/site/providing.php');
+include ('includes/site/clientele.php');
+include ('includes/site/footer.php');
 ?>
