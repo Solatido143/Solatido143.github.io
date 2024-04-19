@@ -1,0 +1,234 @@
+:root {
+    --rotate-x: 350deg;
+    --rotate-y: 30deg;
+}
+
+/* Variables */
+laptop-width: 30rem;
+laptop-height: 20rem;
+light: #bfbfbf;
+dark: #3f3f3f;
+darkest: #1f1f1f;
+border-radius: 5px;
+
+/* Laptop */
+#laptop,
+.cube,
+.cube__face {
+    width: laptop-width;
+    height: laptop-height;
+}
+
+input[type=range] {
+    margin-bottom: 2rem;
+    -webkit-appearance: none;
+    width: 100%;
+    background: transparent;
+    opacity: 0.5;
+    transition: 0.2s;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+}
+
+input[type=range]:focus,
+input[type=range]:hover {
+    outline: none;
+    opacity: 1;
+}
+
+input[type=range]::-ms-track {
+    width: 100%;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 1.6rem;
+    width: 1.6rem;
+    border-radius: 50%;
+    background: white;
+    cursor: pointer;
+    box-shadow: 0 0 0 3px light, 0 0 2px 5px rgba(0, 0, 0, 0.5);
+    margin-top: -0.3rem;
+}
+
+input[type=range]::-moz-range-thumb {
+    height: 1.6rem;
+    width: 1.6rem;
+    border-radius: border-radius;
+    background: light;
+    cursor: pointer;
+    box-shadow: 0 0 0 3px light, 0 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+input[type=range]::-ms-thumb {
+    height: 1.6rem;
+    width: 1.6rem;
+    border-radius: border-radius;
+    background: light;
+    cursor: pointer;
+    box-shadow: 0 0 0 3px light, 0 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 1.2rem;
+    cursor: pointer;
+    background: dark;
+    border-radius: border-radius;
+    box-shadow: 2px 1px 3px 0 rgba(0, 0, 0, 0.7) inset;
+    border: 1px solid mix(dark, black, 70%);
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+input[type=checkbox]#laptop-toggle:checked+#laptop .cube__face--back {
+    transform-origin: 50% 100%;
+    transform: rotateY(180deg) rotateX(90deg) translateY(laptop-height / 2);
+    z-index: 10;
+}
+
+#laptop {
+    display: block;
+    perspective: 400px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+}
+
+.cube {
+    position: relative;
+    transform-style: preserve-3d;
+    transform: translateZ(-laptop-width / 2) rotateX(var(--rotate-x)) rotateY(var(--rotate-y));
+    transition: 0.2s;
+}
+
+.cube__face {
+    position: absolute;
+    transform-style: preserve-3d;
+}
+
+#top-screen {
+    shine: rgba(255, 255, 255, 0.3);
+    position: absolute;
+    width: laptop-width / 2;
+    height: laptop-height / 2;
+    background-color: rgba(0, 0, 0, 0.9);
+    background-image: url(https://eyeride.io/images/Main-page-Cameras2-OPT.gif);
+    margin: 3rem 0 0 16rem;
+    z-index: -1;
+    background-size: cover;
+}
+
+.cube__face--back {
+    transform: rotateY(180deg) translateZ(laptop-height / 2);
+    border-top-left-radius: border-radius;
+    border-top-right-radius: border-radius;
+    transition: 0.3s;
+    outline-color: transparent;
+}
+
+.cube__face--back:hover,
+.cube__face--back:focus {
+    outline-color: black;
+}
+
+.cube__face--back:hover {
+    cursor: pointer;
+}
+
+.cube__face--back>div {
+    background-image: linear-gradient(125deg, rgba(255, 255, 255, 0.5), transparent);
+    background-color: light;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.cube__face--back>div:nth-child(#{i + 1}) {
+    transform: translateZ(#{i / 2}px);
+    background-color: mix(light, rgba(0, 0, 0, 0.3), 50%);
+}
+
+.cube__face--back>div:last-child {
+    background-color: light;
+}
+
+.cube__face--back>div:first-child {
+    transform: translateZ(-1px);
+}
+
+#screen {
+    shine: rgba(255, 255, 255, 0.3);
+    position: absolute;
+    width: laptop-width - 2;
+    height: laptop-height - 2.5;
+    background-color: white;
+    background-image: url(https://eyeride.io/images/FMS-map.png);
+    margin: 1rem 0 0 1rem;
+    z-index: -1;
+    transform: scaleX(-1);
+    background-size: cover;
+}
+
+.cube__face--bottom {
+    box-shadow: 0 0 30px rgba(93, 97, 118, 0.7);
+    border-bottom-left-radius: border-radius;
+    border-bottom-right-radius: border-radius;
+    background-color: light;
+    transform: rotateX(-90deg) translateZ(laptop-height / 2);
+}
+
+.cube__face--bottom>div {
+    background-color: light;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.cube__face--bottom>div:nth-child(#{i + 1}) {
+    transform: translateZ(-#{i / 2}px);
+    background-color: mix(light, rgba(0, 0, 0, 0.3), 50%);
+}
+
+.cube__face--bottom>div:last-child {
+    background-color: light;
+}
+
+#keyboard {
+    background-color: dark;
+    position: absolute;
+    width: laptop-width - 4;
+    height: 8rem;
+    bottom: 3rem;
+    left: 1rem;
+    display: grid;
+    transform: rotatex(180deg);
+    padding: 1rem;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 4px;
+}
+
+#trackpad {
+    background-color: darker;
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 5.5rem;
+    width: 8rem;
+    border-radius: border-radius;
+}

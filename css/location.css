@@ -4,9 +4,18 @@
     margin: 3em 0;
 }
 
+.location-icon .fa-solid::before {
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+
 .location-icon {
     position: absolute;
     z-index: 8;
+}
+
+.fa-circle-dot {
+    padding: 1em 0.25em 0.25em 0.25em;
 }
 
 .fa-location-dot,
@@ -44,8 +53,8 @@
 
 /* Luzon */
 .pangasinan {
-    top: 23.5%;
-    left: 37.5%;
+    top: 22%;
+    left: 36.5%;
 }
 .surigao {
     top: 60.5%;
@@ -53,12 +62,12 @@
 }
 
 .tarlac {
-    top: 26.5%;
+    top: 24%;
     left: 39.5%;
 }
 
 .pampanga {
-    top: 28.5%;
+    top: 27%;
     left: 39.5%;
 }
 
@@ -82,8 +91,8 @@
 }
 
 .bataan {
-    top: 31%;
-    left: 39%;
+    top: 30%;
+    left: 38%;
 }
 
 .batangas {
@@ -97,8 +106,8 @@
 }
 
 .mindoro {
-    top: 41.5%;
-    left: 44%;
+    top: 40%;
+    left: 43%;
 }
 
 .palawan {
@@ -112,13 +121,13 @@
 }
 
 .ilocos {
-    top: 18.5%;
-    left: 39.3%;
+    top: 17.5%;
+    left: 38%;
 }
 
 .baguio {
-    top: 20.5%;
-    left: 40.5%;
+    top: 19%;
+    left: 40%;
 }
 
 .cavite {
@@ -210,6 +219,10 @@
         top: 81%;
         left: 73.8%;
     }
+    .cotabato {
+        top: 74.3%;
+        left: 67.2%;
+    }
 
     .cagayandeoro {
         top: 66%;
@@ -275,8 +288,8 @@
     }
 
     .dipolog {
-        top: 68.1%;
-        left: 61%;
+        top: 66.3%;
+        left: 60%;
     }
 
     .zamboanga {
@@ -332,8 +345,8 @@
     }
 
     .generalsantos {
-        top: 82.5%;
-        left: 73.9%;
+        top: 83%;
+        left: 74.9%;
     }
 
     .davao {

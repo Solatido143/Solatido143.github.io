@@ -1,11 +1,21 @@
 body{
-  background-color: #21222a;
+  background-color: #111;
   /* #dbdada */
 }
+
     .owl-buttons {
     
   display: none;
 }
+
+/* linya below ng text burahin kung panget */
+div[style="text-align: center;"] h1 {
+  border-bottom: 2px solid red;
+  padding-bottom: 10px; /* Adjust as needed */
+  display: inline-block; /* Ensure the border only takes the width of the text */
+}
+
+
 .owl-carousel:hover .owl-buttons {
 
   display: block;
@@ -29,15 +39,16 @@ body{
 }
 .owl-theme .owl-controls .owl-buttons .owl-prev {
   left: 0;
-  margin-top: -85px;
+  margin-top: -95px;
   padding-left: 20px;
 }
 .owl-theme .owl-controls .owl-buttons .owl-next {
   right: 0;
-  margin-top: -85px;
+  margin-top: -95px;
   padding-right: 20px;
-}
-  
+} 
+
+
 
 #owl-example .client img {
   max-height: 100px; /* Adjust the maximum height as needed */
@@ -45,3 +56,53 @@ body{
   width: auto;
   height: auto;
 }
+
+
+/* Hide pagination dots */
+.owl-theme .owl-controls .owl-pagination {
+  display: none;
+}
+  
+
+#owl-example-2 .client img {
+  max-height: 100px; /* Adjust the maximum height as needed */
+  max-width: 100px; /* Adjust the maximum width as needed */
+  width: auto;
+  height: auto;
+}
+
+#owl-example-2 .owl-buttons {
+  display: none;
+}
+
+/* Show buttons on carousel hover */
+#owl-example-2.owl-carousel:hover .owl-buttons {
+  display: block;
+}
+
+/* Styles for the button icons (prev and next) */
+#owl-example-2 .owl-controls .owl-buttons div {
+  background: transparent;
+  color: #978688;
+  font-size: 40px;
+  line-height: 100px; /* Adjust as needed */
+  margin: 0;
+  padding: 0 20px; /* Adjust padding as needed */
+  position: absolute;
+  top: 30%;
+  transform: translateY(-50%);
+  z-index: 1000; /* Ensure buttons appear above the carousel items */
+}
+
+/* Style for the previous button */
+#owl-example-2 .owl-controls .owl-buttons .owl-prev {
+  left: 0;
+}
+
+/* Style for the next button */
+#owl-example-2 .owl-controls .owl-buttons .owl-next {
+  right: 0;
+}
+
+
+
