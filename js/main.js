@@ -137,25 +137,5 @@ function adjustHeight() {
   var headerHeight = getHeaderHeight();
   var newViewHeight = `calc(100vh - ${headerHeight}px)`;
   document.getElementById('particlesView').style.height = newViewHeight;
-
-  var companyOverview = document.getElementById('companyOverview');
-  var services = document.getElementById('services');
-  var providing = document.getElementById('providing');
-
-    
-  var currentPaddingTop = window.getComputedStyle(companyOverview).paddingTop;
-  
-  currentPaddingTop = parseInt(currentPaddingTop, 10);
-  
-  var newPaddingTop = currentPaddingTop + headerHeight;
-  
-  companyOverview.style.paddingTop = newPaddingTop + 'px';
-  companyOverview.style.paddingBottom = newPaddingTop + 'px';
-  services.style.paddingTop = newPaddingTop + 'px';
-  services.style.paddingBottom = newPaddingTop + 'px';
-  providing.style.paddingTop = newPaddingTop + 'px';
-
-  console.log('hello');
-  
 }
 adjustHeight();

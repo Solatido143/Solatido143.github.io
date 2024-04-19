@@ -56,12 +56,6 @@ div[style="text-align: center;"] h1 {
   width: auto;
   height: auto;
 }
-
-
-/* Hide pagination dots */
-.owl-theme .owl-controls .owl-pagination {
-  display: none;
-}
   
 
 #owl-example-2 .client img {
