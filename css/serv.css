@@ -4,10 +4,6 @@
     display: none !important;
 }
 
-.services {
-    background-color: #000;
-}
-
 .gallery-wrapper {
     margin: 0;
     font-family: 'Times New Roman', Times, serif;
@@ -15,7 +11,6 @@
     font-weight: 400;
     line-height: normal;
     letter-spacing: normal;
-    margin-top: 20px;
 }
 
 /* Gallery styles */

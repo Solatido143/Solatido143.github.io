@@ -154,6 +154,8 @@ function adjustHeight() {
   services.style.paddingTop = newPaddingTop + 'px';
   services.style.paddingBottom = newPaddingTop + 'px';
   providing.style.paddingTop = newPaddingTop + 'px';
+
+  console.log('hello');
   
 }
 adjustHeight();
