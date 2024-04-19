@@ -41,6 +41,18 @@
         .crds>* {
             margin: 20px auto;
         }
+
+        :root {
+            --header-height: 82px;
+        }
+        @media (min-width: 992px) {
+            #companyOverview {
+                height: calc(100vh - var(--header-height));
+            }
+        }
+
+        
+
     </style>
 
 </head>
@@ -210,28 +222,16 @@
             document.getElementById("menu").classList.remove("show");
         }
 
-        function getHeaderHeight() {
+        function setHeaderHeight() {
             var header = document.getElementById('header');
-            return header ? header.offsetHeight : 0;
-        }
-
-        function adjustHeight() {
-            var headerHeight = getHeaderHeight();
-            var newViewHeight = `calc(100vh - ${headerHeight}px)`;
-            
-            var companyOverview = document.getElementById('companyOverview');
-            
-            if (!companyOverview) {
-                console.log("companyOverview element not found");
-                return;
+            if (header) {
+                var headerHeight = header.offsetHeight;
+                document.documentElement.style.setProperty('--header-height', `${headerHeight}px`);
             }
-
-            // Adjust top padding
-            companyOverview.style.height = newViewHeight;
-            console.log(companyOverview);
         }
 
-        adjustHeight();
+        setHeaderHeight();
+
     </script>
 </body>
 
