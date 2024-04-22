@@ -23,6 +23,8 @@ document.querySelector('form').addEventListener('submit', function (event) {
     .then(data => {
         if (data.success) {
             alert('Email sent successfully! Thank you for contacting us!');
+            document.getElementById('email').value = '';
+            document.getElementById('message').value = '';
         } else {
             alert(data.message || 'Something went wrong. Please try again later.');
         }
