@@ -49,7 +49,7 @@
       line_linked: {
         enable: true,
         distance: 150,
-        color: "#ffffff",
+        color: "#ff1414",
         opacity: 0.4,
         width: 1,
       },
@@ -73,17 +73,17 @@
       events: {
         onhover: {
           enable: true,
-          mode: "repulse",
+          mode: "grab",
         },
         onclick: {
           enable: true,
-          mode: "grab",
+          mode: "repulse",
         },
         resize: true,
       },
       modes: {
         grab: {
-          distance: 400,
+          distance: 200,
           line_linked: {
             opacity: 1,
           },
