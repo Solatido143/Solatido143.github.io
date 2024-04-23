@@ -71,6 +71,7 @@
                         <li><a href="index.html">Home</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="services.html">Services</a></li>
+                        <li><a href="#">Careers</a></li>
                         <li><a href="#footer">Contact us</a></li>
                     </ul>
                 </nav>
@@ -149,7 +150,7 @@
         </div>
     </div>
 
-    <footer id="footer">
+    <footer id="footer" >
         <div class="main-content">
             <div class="left box">
                 <h2>Social Media</h2>
@@ -184,12 +185,12 @@
                 <div class="content">
                     <form action="mailer.php" method="post">
                         <div class="email">
-                            <div class="text">Email *</div>
-                            <input type="email" name="email" required>
+                            <div class="text">Email <span style="color: red;">*</span></div>
+                            <input type="email" name="email" id="email" required>
                         </div>
                         <div class="msg">
-                            <div class="text">Message *</div>
-                            <textarea rows="2" cols="25" name="message" required></textarea>
+                            <div class="text">Message <span style="color: red;">*</span></div>
+                            <textarea rows="2" cols="25" name="message" id="message" required></textarea>
                         </div>
                         <div class="btn">
                             <button type="submit">Send</button>

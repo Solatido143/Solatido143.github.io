@@ -9,7 +9,7 @@ document.querySelector('form').addEventListener('submit', function (event) {
     queryParams.append('email', email);
     queryParams.append('message', message);
 
-    const url = `http://localhost:8080/test-landia/web/api/contact-us?${queryParams.toString()}`;
+    const url = `http://192.168.1.28:8080/test-landia/web/api/contact-us?${queryParams.toString()}`;
 
     fetch(url, {
         method: 'GET',
@@ -23,11 +23,11 @@ document.querySelector('form').addEventListener('submit', function (event) {
     .then(data => {
         if (data.success) {
             alert('Email sent successfully! Thank you for contacting us!');
-            document.getElementById('email').value = '';
-            document.getElementById('message').value = '';
         } else {
             alert(data.message || 'Something went wrong. Please try again later.');
         }
+        document.getElementById('email').value = '';
+        document.getElementById('message').value = '';
     })
     .catch(error => {
         console.error('Error:', error);

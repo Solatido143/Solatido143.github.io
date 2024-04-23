@@ -1,13 +1,17 @@
 .img {
-    width: 100%;
     height: auto;
-    margin: 3em 0;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .img {
+        width: 500px;
+    }
 }
 
 .location-icon .fa-solid::before {
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
-
 
 .location-icon {
     position: absolute;
@@ -53,364 +57,567 @@
 
 /* Luzon */
 .pangasinan {
-    top: 22%;
-    left: 36.5%;
-}
-.surigao {
-    top: 60.5%;
-    left: 77.5%;
+    top: 29%;
+    left: 34.5%;
 }
 
 .tarlac {
-    top: 24%;
+    top: 32%;
     left: 39.5%;
 }
 
 .pampanga {
-    top: 27%;
-    left: 39.5%;
+    top: 34%;
+    left: 40%;
 }
 
 .bulacan {
-    top: 29.5%;
-    left: 41.5%;
+    top: 36%;
+    left: 42%;
 }
 
 .tuguegarao {
-    top: 12%;
-    left: 48%;
+    top: 20%;
+    left: 49%;
 }
+
 .isabela {
-    top: 19%;
-    left: 50%;
+    top: 23%;
+    left: 52%;
 }
 
 .bicol {
-    top: 37%;
-    left: 60%;
+    top: 44%;
+    left: 61%;
 }
 
 .bataan {
-    top: 30%;
+    top: 37%;
     left: 38%;
 }
 
 .batangas {
-    top: 36.5%;
-    left: 43.4%;
+    top: 41.5%;
+    left: 42.4%;
 }
 
 .lucena {
-    top: 35%;
-    left: 47.5%;
+    top: 41%;
+    left: 47%;
 }
 
 .mindoro {
-    top: 40%;
+    top: 47%;
     left: 43%;
 }
 
 .palawan {
-    top: 59.5%;
-    left: 26%;
-}
-
-.palawan {
-    top: 57.5%;
-    left: 26%;
+    top: 63%;
+    left: 27%;
 }
 
 .ilocos {
-    top: 17.5%;
+    top: 24.5%;
     left: 38%;
 }
 
 .baguio {
-    top: 19%;
+    top: 26%;
     left: 40%;
 }
 
 .cavite {
-    top: 34%;
-    left: 42%;
+    top: 39%;
+    left: 41.5%;
 }
 
 .laguna {
-    top: 33.5%;
-    left: 45.5%;
+    top: 39.5%;
+    left: 45%;
 }
 
 .ncr {
-    top: 31.5%;
-    left: 43.5%;
+    top: 37.5%;
+    left: 43%;
 }
 
 /* Visayas */
 .bacolod {
-    top: 54%;
-    left: 57.2%;
+    top: 60%;
+    left: 57.7%;
 }
 
 .cebu {
-    top: 56%;
-    left: 64%;
+    top: 62%;
+    left: 65%;
 }
 
 .roxas {
-    top: 50%;
-    left: 55%;
+    top: 55%;
+    left: 55.6%;
 }
 
 .iloilo {
-    top: 53.6%;
-    left: 54.3%;
+    top: 59.5%;
+    left: 54.2%;
 }
 
 .tacloban {
-    top: 50.5%;
-    left: 72%;
+    top: 56.5%;
+    left: 73%;
 }
 
 /* Mindanao */
 .cagayandeoro {
-    top: 66.3%;
-    left: 69%;
+    top: 72.8%;
+    left: 70.5%;
+}
+
+.surigao {
+    top: 65.5%;
+    left: 77%;
 }
 
 .davao {
-    top: 73.5%;
-    left: 76%;
+    top: 80%;
+    left: 78%;
 }
 
 .cotabato {
-    top: 73.3%;
-    left: 66.2%;
+    top: 79.5%;
+    left: 67.3%;
 }
 
 .dipolog {
-    top: 68.3%;
-    left: 60%;
+    top: 72%;
+    left: 60.6%;
 }
 
 .zamboanga {
-    top: 74.3%;
+    top: 80%;
     left: 51%;
 }
 
 .generalsantos {
-    top: 79%;
-    left: 72.8%;
-}
-
-@media (min-width: 426px) {
-    .davao {
-        top: 74.5%;
-        left: 78%;
-    }
-    .generalsantos {
-        top: 81%;
-        left: 73.8%;
-    }
-}
-
-/* sm */
-@media (min-width: 576px) {
-    .generalsantos {
-        top: 81%;
-        left: 73.8%;
-    }
-    .cotabato {
-        top: 74.3%;
-        left: 67.2%;
-    }
-
-    .cagayandeoro {
-        top: 66%;
-        left: 69.8%;
-    }
-
-    .zamboanga {
-        top: 73.3%;
-        left: 51%;
-    }
-
-    .cebu {
-        top: 55%;
-        left: 64%;
-    }
-
-    .iloilo {
-        top: 53.2%;
-        left: 54.2%;
-    }
+    top: 86%;
+    left: 73.8%;
 }
 
 /* md */
 @media (min-width: 768px) {
-    .iloilo {
-        top: 54.2%;
-        left: 54.5%;
-    }
-
-    .bacolod {
-        top: 54.5%;
-        left: 57.8%;
-    }
-
-    .cebu {
-        top: 56.4%;
-        left: 64.7%;
-    }
-
-    .cagayandeoro {
-        top: 67.5%;
-        left: 69.8%;
-    }
-
-    .palawan {
-        top: 60%;
-        left: 26%;
-    }
-
-    .lucena {
-        top: 35.3%;
-        left: 48%;
-    }
-
-    .generalsantos {
-        top: 82%;
-        left: 74.3%;
-    }
-
-    .davao {
-        top: 75%;
-        left: 78%;
+    .zamboanga {
+        top: 80%;
+        left: 50.5%;
     }
 
     .dipolog {
-        top: 66.3%;
-        left: 60%;
+        top: 71%;
+        left: 57.6%;
     }
 
-    .zamboanga {
-        top: 75.3%;
-        left: 51.3%;
+    .generalsantos {
+        top: 85%;
+        left: 67.2%;
+    }
+
+    .cotabato {
+        top: 78.5%;
+        left: 62.3%;
+    }
+
+    .davao {
+        top: 79%;
+        left: 70%;
+    }
+
+    .cagayandeoro {
+        top: 71.8%;
+        left: 63.5%;
+    }
+
+    .surigao {
+        top: 63.8%;
+        left: 69.5%;
+    }
+
+    .palawan {
+        top: 63%;
+        left: 31%;
     }
 
     .tacloban {
-        top: 51.2%;
-        left: 72.7%;
+        top: 54.5%;
+        left: 67%;
+    }
+
+    .cebu {
+        top: 60%;
+        left: 61%;
+    }
+
+    .roxas {
+        top: 53%;
+        left: 54.6%;
+    }
+    .bicol {
+        top: 42%;
+        left: 58%;
+    }
+
+    .iloilo {
+        top: 57.5%;
+        left: 53.2%;
+    }
+
+    .bacolod {
+        top: 58%;
+        left: 55.7%;
+    }
+
+    .mindoro {
+        top: 45%;
+        left: 45%;
+    }
+
+    .lucena {
+        top: 38%;
+        left: 48%;
+    }
+
+    .laguna {
+        top: 37%;
+        left: 46%;
+    }
+
+    .batangas {
+        top: 39.5%;
+        left: 44.8%;
+    }
+
+    .ncr {
+        top: 34.5%;
+        left: 44.7%;
+    }
+
+    .cavite {
+        top: 37%;
+        left: 43%;
+    }
+
+    .bulacan {
+        top: 33%;
+        left: 44%;
+    }
+
+    .pampanga {
+        top: 31%;
+        left: 42%;
+    }
+
+    .tarlac {
+        top: 29%;
+        left: 41.5%;
+    }
+
+    .bataan {
+        top: 34%;
+        left: 41.5%;
+    }
+
+    .baguio {
+        top: 23%;
+        left: 43%;
+    }
+
+    .ilocos {
+        top: 20.5%;
+        left: 41.5%;
+    }
+
+    .pangasinan {
+        top: 26%;
+        left: 39.5%;
+    }
+
+    .isabela {
+        top: 19%;
+        left: 51%;
+    }
+
+    .tuguegarao {
+        top: 17%;
+        left: 49%;
     }
 }
 
 /* lg */
 @media (min-width: 992px) {
-    .surigao {
-        top: 60.9%;
-        left: 77.9%;
-    }
-    .batangas {
-        top: 36.7%;
-        left: 43.8%;
-    }
-
-    .iloilo {
-        top: 55%;
-        left: 54.8%;
-    }
-
-    .bacolod {
-        top: 55.5%;
-        left: 58%;
-    }
-
-    .cebu {
-        top: 57.1%;
-        left: 65.3%;
-    }
-
-    .tacloban {
-        top: 52.2%;
-        left: 73.3%;
-    }
-
     .zamboanga {
-        top: 76.8%;
-        left: 51.7%;
-    }
-
-    .cagayandeoro {
-        top: 68.5%;
-        left: 70.4%;
-    }
-
-    .generalsantos {
-        top: 83%;
-        left: 74.9%;
-    }
-
-    .davao {
-        top: 76.5%;
-        left: 77.7%;
+        left: 50.5%;
     }
 
     .dipolog {
-        top: 68.6%;
-        left: 60.5%;
+        left: 55.6%;
+    }
+
+    .generalsantos {
+        left: 62.7%;
+    }
+
+    .cotabato {
+        left: 59.3%;
+    }
+
+    .davao {
+        left: 64.5%;
+    }
+
+    .cagayandeoro {
+        left: 59.5%;
+    }
+
+    .surigao {
+        left: 64.5%;
+    }
+
+    .palawan {
+        left: 36%;
+    }
+
+    .tacloban {
+        left: 62%;
+    }
+
+    .cebu {
+        left: 58%;
     }
 
     .roxas {
-        top: 51%;
-        left: 55%;
+        left: 53%;
+    }
+
+    .iloilo {
+        left: 52.2%;
+    }
+
+    .bacolod {
+        left: 54.3%;
+    }
+
+    .mindoro {
+        left: 46%;
+    }
+
+    .lucena {
+        left: 48%;
+    }
+
+    .bicol {
+        left: 56%;
+    }
+
+    .laguna {
+        left: 47%;
+    }
+
+    .batangas {
+        left: 44.8%;
+    }
+
+    .ncr {
+        left: 46.3%;
+    }
+
+    .cavite {
+        left: 45%;
+    }
+
+    .bulacan {
+        left: 46%;
+    }
+
+    .pampanga {
+        left: 44%;
+    }
+
+    .tarlac {
+        left: 43.5%;
+    }
+
+    .bataan {
+        left: 43.5%;
+    }
+
+    .baguio {
+        left: 45%;
+    }
+
+    .ilocos {
+        left: 44%;
+    }
+
+    .pangasinan {
+        left: 41.5%;
+    }
+
+    .isabela {
+        top: 20%;
+        left: 51%;
+    }
+
+    .tuguegarao {
+        left: 49%;
     }
 }
 
 /* xl */
 @media (min-width: 1200px) {
+    .zamboanga {
+        top: 79%;
+        left: 50.3%;
+    }
+    .cotabato {
+        left: 57.5%;
+    }
+    .generalsantos {
+        left: 60.7%;
+    }
+    .davao {
+        left: 62.3%;
+    }
+    .cagayandeoro {
+        left: 59%;
+    }
+    .surigao {
+        left: 62%;
+    }
+    .cebu {
+        left: 56.6%;
+    }
+    .bacolod {
+        left: 53.5%;
+    }
     .iloilo {
-        top: 55.3%;
+        left: 52%;
+    }
+    .roxas {
+        left: 52.8%;
+    }
+    .tacloban {
+        left: 60.3%;
+    }
+    .palawan {
+        left: 38.3%;
+    }
+    .mindoro {
+        left: 47%;
+    }
+    .bicol {
         left: 55%;
     }
-
-    .bacolod {
-        top: 55.5%;
-        left: 58.5%;
+    .lucena {
+        left: 48.5%;
     }
-
-    .cagayandeoro {
-        top: 69.6%;
-        left: 70.4%;
+    .batangas {
+        left: 46.8%;
     }
-
-    .generalsantos {
-        top: 83.2%;
-        left: 74.3%;
+    .laguna {
+        left: 47.5%;
     }
-
-    .davao {
-        top: 77%;
-        left: 78%;
+    .cavite {
+        left: 45.5%;
     }
-
-    .dipolog {
-        top: 69.3%;
-        left: 60.9%;
+    .ncr {
+        left: 46.7%;
+    }
+    .bulacan {
+        left: 46.3%;
+    }
+    .bataan {
+        left: 44.5%;
+    }
+    .pampanga {
+        left: 45%;
+    }
+    .tarlac {
+        left: 44.5%;
+    }
+    .pangasinan {
+        left: 43.5%;
+    }
+    .baguio {
+        left: 45.5%;
+    }
+    .ilocos {
+        left: 45%;
+    }.isabela {
+        left: 50.5%;
     }
 }
 
 /* xxl */
 @media (min-width: 1400px) {
-    .surigao {
-        top: 61.5%;
-        left: 77.9%;
+    .palawan {
+        left: 39.8%;
     }
-    .zamboanga {
-        top: 77.8%;
+    .cavite {
+        left: 46.3%;
+    }
+    .ncr {
+        left: 47.2%;
+    }
+    .bulacan {
+        left: 46.9%;
+    }
+    .bataan {
+        left: 45.3%;
+    }
+    .pampanga {
+        left: 46%;
+    }
+    .tarlac {
+        left: 45.5%;
+    }
+    .pangasinan {
+        left: 44.5%;
+    }
+    .baguio {
+        left: 45.8%;
+    }
+    .ilocos {
+        left: 45.5%;
+    }
+    .roxas {
+        left: 52.1%;
+    }
+    .iloilo {
         left: 51.7%;
     }
-
-    .iloilo {
-        top: 55.6%;
-        left: 55.3%;
+    .bacolod {
+        left: 52.9%;
+    }
+    .cebu {
+        left: 55.7%;
+    }
+    .tacloban {
+        left: 58.9%;
+    }
+    .surigao {
+        left: 60.4%;
+    }
+    .dipolog {
+        left: 53.6%;
+    }
+    .cotabato {
+        left: 56.5%;
+    }
+    .generalsantos {
+        left: 59.2%;
+    }
+    .davao {
+        left: 60.6%;
+    }
+    .cagayandeoro {
+        left: 57.7%;
     }
 }
