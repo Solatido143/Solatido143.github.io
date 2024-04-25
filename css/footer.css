@@ -1,12 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
-@font-face {
-	font-family: 'Gotham';
-	src: url('fonts/Gotham-Bold.otf') format('opentype'),
-		url('fonts/GothamBold.ttf') format('truetype');
-	font-weight: 700;
-	font-style: normal;
-}
-/* Resetting default margin and padding */
+
 footer {
   margin: 0;
   padding: 0;
@@ -15,7 +8,10 @@ footer {
   color: #d9d9d9;
   font-size: 14px; /* Adjusting font size for all text */
 }
-
+footer a {
+  text-decoration: none;
+  color: white;
+}
 .content1 {
   position: relative;
   margin: 130px auto;
