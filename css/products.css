@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap');
+
+
+/* CSS for active pagination button */
+.pagination button.active {
+   background-color: white;
+   color: black;
+ }
+ 
+
+
+body{
+   background: #111;
+}
+
+
+/* Tab styling */
+input[type="radio"] {
+   display: none; /* Hide the actual radio buttons */
+ }
+ 
+ label[for^="tab-"] {
+   display: inline-block;
+   margin-right: 15px;
+   padding: 10px 20px;
+   background-color: #f2f2f2;
+   color: #333;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+
+   
+ }
+ 
+ /* Default state */
+ label[for^="tab-"]:hover {
+   background-color: #e0e0e0;
+ }
+
+ 
+ 
+ /* Checked state */
+ input[type="radio"]:checked + label[for^="tab-"] {
+   background-color: #ff1414;
+   color: #fff;
+ }
+ 
+
+.container1{
+   max-width: 1200px;
+   margin:-32px auto;
+   padding:3rem 2rem;
+   text-align: center;
+
+
+}
+
+
+.container1 .title {
+   font-size: 24px;
+   color: white;
+   margin-bottom: 3rem;
+   text-transform: uppercase;
+   text-align: center;
+
+}
+
+
+
+.container1 .products-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+   gap:2rem;
+   
+}
+
+.container1 .products-container .product {
+   text-align: center;
+   padding: 3rem 2rem;
+   /* background: radial-gradient(circle, rgb(255, 255, 255), rgba(255, 255, 255, 0.11));  */
+   box-shadow: 0 .5rem 1rem rgba(255, 255, 255, 10);
+   outline: .1rem solid #ff1414;
+   outline-offset: -1.5rem;
+   cursor: pointer;
+   display: flex; /* Use flexbox */
+   flex-direction: column; /* Stack image and text vertically */
+   justify-content: center;
+}
+
+
+
+
+.container1 .products-container .product:hover{
+   outline: .2rem solid #222;
+   outline-offset: 0;
+}
+
+.container1 .products-container .product img{
+   max-width: 50%; /* Ensure the image does not exceed its container */
+   height: auto; /* Maintain aspect ratio */
+   display: block;
+   margin: auto;
+}
+
+.container1 .products-container .product:hover img{
+   transform: scale(.9);
+}
+
+.container1 .products-container .product h3{
+   padding: .5rem 0;
+   font-size: 2rem;
+   color: #ffffff;
+   margin-top: 1rem;
+   
+}
+
+.container1 .products-container .product:hover h3{
+   color:#ff1414;
+}
+
+.container1 .products-container .product .price{
+   font-size: 2rem;
+   color:#444;
+}
+
+.products-preview {
+   position: fixed;
+   top: 0;
+   left: 0;
+   min-height: 100vh;
+   width: 100%;
+   background: rgba(0, 0, 0, .8);
+   display: none;
+   align-items: center;
+   justify-content: center;
+   z-index: 1000; /* Set a higher z-index value */
+}
+
+
+
+.products-preview .preview {
+   display: none;
+   padding: 2rem;
+   text-align: center;
+   background: #fff;
+   position: relative;
+   margin: 2rem;
+   width: 20rem;
+   max-height: 90vh; /* Example: Set a maximum height */
+   overflow-y: auto;
+   border: 3px solid #ff1414; /* Add border style */
+   border-radius: 5px; /* Add border radius for rounded corners */
+ }
+ 
+
+.products-preview .preview.active{
+   display: inline-block;
+}
+
+.products-preview .preview img {
+  max-width: 50%; /* Ensure image doesn't exceed container */
+  height: auto; /* Maintain aspect ratio */
+  display: block;
+  margin: auto;
+  width: 100%; /* Fill available width */
+  max-height: 30rem;
+  top: 0; /* Stick to the top edge of the container */
+}
+
+
+.products-preview .preview .fa-times{
+   position: absolute;
+   top:1rem; right:1.5rem;
+   cursor: pointer;
+   color:#444;
+   font-size: 4rem;
+}
+
+
+
+.products-preview .preview .fa-times:hover{
+   transform: rotate(90deg);
+}
+
+.products-preview .preview h3 {
+   position: sticky; /* Make the h3 sticky */
+   top: 0; /* Stick to the top edge of the container */
+   background-color: rgba(0, 0, 0, 0.9); /* Optional: Add background color for better visibility */
+   padding: .5rem 0;
+   font-size: 2.5rem;
+
+ }
+ 
+
+.products-preview .preview .stars{
+   padding:1rem 0;
+   font-size: 1.7rem;
+}
+
+.products-preview .preview p {
+   font-size: 1.6rem;
+   color: #777;
+
+}
+
+.products-preview .preview .stars i{
+   color:#27ae60;
+}
+
+.products-preview .preview .stars span{
+   color:#999;
+}
+
+.products-preview .preview p{
+   line-height: 1.5;
+   padding:1rem 0;
+   font-size: 1.6rem;
+   color:#777;
+}
+
+.products-preview .preview .price{
+   padding:1rem 0;
+   font-size: 2.5rem;
+   color:#27ae60;
+}
+
+.products-preview .preview .buttons{
+   display: flex;
+   gap:1.5rem;
+   flex-wrap: wrap;
+   margin-top: 1rem;
+}
+
+.products-preview .preview .buttons a{
+   flex:1 1 16rem;
+   padding:1rem;
+   font-size: 1.8rem;
+   color:#444;
+   border:.1rem solid #444;
+}
+
+.products-preview .preview .buttons a.cart{
+   background: #444;
+   color:#fff;
+}
+
+.products-preview .preview .buttons a.cart:hover{
+   background: #111;
+}
+
+.products-preview .preview .buttons a.buy:hover{
+   background: #444;
+   color:#fff;
+}
+
+
+.container1 .products-container .product img,
+.products-preview .preview img {
+   max-width: 100%; /* Ensure the image does not exceed its container */
+   height: auto; /* Maintain aspect ratio */
+   display: block;
+   margin: auto;
+}
+
+.products-preview .preview {
+   max-width: 90%; /* Example: Limit preview width for smaller screens */
+   width: 40rem; /* Example: Set a fixed width for larger screens */
+}
+
+/* 
+pagination */
+.pagination {
+   display: flex;
+   justify-content: center;
+   margin-top: 20px;
+ }
+ 
+ .pagination button {
+   padding: 10px 20px;
+   margin: 0 5px;
+   background-color: #ff1414;
+   color: white;
+   border: none;
+   cursor: pointer;
+   border-radius: 5px;
+ }
+ 
+ .pagination button:hover {
+   background-color: #ffffff;
+   color: #000000;
+ }
+ 
+ @media (max-width: 768px) {
+   .pagination button {
+     font-size: 14px;
+     padding: 8px 16px;
+   }
+ }
+ 
+
+
+
+
+
+/* Existing CSS code */
+
+/* Media query for tablets and smaller screens */
+@media (max-width: 991px) {
+    .container1 .products-container {
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    }
+    .products-preview .preview {
+        width: 90%; /* Adjust preview width for smaller screens */
+    }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .container1 .title {
+        font-size: 2.5rem; /* Decrease title font size */
+    }
+    .container1 .products-container {
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); /* Adjust product grid for smaller screens */
+    }
+    .products-preview .preview img {
+        height: 10rem; /* Adjust preview image height for smaller screens */
+    }
+}
+
+/* Media query for smaller mobile devices */
+@media (max-width: 450px) {
+    .container1 .title {
+        font-size: 2rem; /* Further decrease title font size */
+    }
+    .container1 .products-container {
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); /* Further adjust product grid for smaller screens */
+    }
+}
+
+

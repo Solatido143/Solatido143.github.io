@@ -30,6 +30,14 @@
 	/* Track color */
 }
 
+@font-face {
+	font-family: 'Gotham';
+	src: url('fonts/Gotham-Bold.otf') format('opentype'),
+		url('fonts/GothamBold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -41,8 +49,32 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Gotham', 'Times New Roman', Times, serif;
     font-size: 75%; /* Adjust the font size if needed */
     overflow-x: hidden;
     color: #fff;
 }
+
+.overview-cards .card {
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.overview-cards .card:hover {
+    transform: scale(1.05);
+    animation: circling-background 5s linear infinite;
+}
+
+@keyframes circling-background {
+	100% {
+        background: radial-gradient(circle at top right, transparent, transparent, #ff1414);
+    }
+    0% {
+        background: radial-gradient(circle at top left, transparent, transparent, #ff1414);
+    }
+    100% {
+        background: radial-gradient(circle at top left, transparent, transparent, #ff1414);
+    }
+}
+
+

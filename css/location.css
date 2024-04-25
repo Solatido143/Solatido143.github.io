@@ -621,3 +621,31 @@
         left: 57.7%;
     }
 }
+
+.accordion-header button {
+    background: #111;
+    color: #fff;
+}
+
+.accordion-body {
+    background: #111;
+    background: linear-gradient(to top,#262731, #1d1e24, #111);
+    color: #fff;
+}
+
+.accordion-item {
+    background: #111;
+    background: linear-gradient(to top,#262731, #1d1e24, #111);
+    color: #fff;
+    border: none;
+}
+
+.accordion-header button:not(.collapsed) {
+    color: #fff;
+    background-color: #ff2424;
+    box-shadow: inset 0 calc(-1* 1px) 0 #111;
+}
+
+.accordion-header button::after {
+    color: #fff;
+}

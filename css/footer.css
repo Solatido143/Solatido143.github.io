@@ -1,11 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
-
+@font-face {
+	font-family: 'Gotham';
+	src: url('fonts/Gotham-Bold.otf') format('opentype'),
+		url('fonts/GothamBold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}
 /* Resetting default margin and padding */
 footer {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Times New Roman', Times, serif; /* Change font-family here */
+  font-family: 'Gotham', 'Times New Roman', Times, serif;
   color: #d9d9d9;
   font-size: 14px; /* Adjusting font size for all text */
 }
