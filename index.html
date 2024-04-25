@@ -35,6 +35,11 @@
 </head>
 
 <body>
+    <div class="spinnerborder d-none position-fixed top-0 d-flex justify-content-center align-items-center vh-100 vw-100 bg-body-tertiary bg-opacity-25" style="z-index: 99;">
+        <div class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
 
     <!-- Navbar -->
     <header class="py-3" id="header">
@@ -51,7 +56,7 @@
                         <li><a href="overview.html">About</a></li>
                         <li><a href="services.html">Services</a></li>
                         <li><a href="products.html">Products</a></li>
-                        <li><a href="careers.html">Careers</a></li>
+                        <li class="d-none"><a href="careers.html">Careers</a></li>
                         <li><a href="contactus.html">Contact us</a></li>
                     </ul>
                 </nav>
@@ -185,7 +190,7 @@
             <div class="right box">
                 <h2>Contact us</h2>
                 <div class="content">
-                    <form action="mailer.php" method="post">
+                    <form>
                         <div class="email">
                             <div class="text">Email <span style="color: red;">*</span></div>
                             <input type="email" name="email" id="email" required>

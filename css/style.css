@@ -1,3 +1,11 @@
+@font-face {
+	font-family: 'Gotham';
+	src: url('fonts/Gotham-Bold.otf') format('opentype'),
+		url('fonts/GothamBold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}
+
 ::-webkit-scrollbar {
 	width: 10px;
 	/* Adjust the width as needed */
@@ -30,13 +38,7 @@
 	/* Track color */
 }
 
-@font-face {
-	font-family: 'Gotham';
-	src: url('fonts/Gotham-Bold.otf') format('opentype'),
-		url('fonts/GothamBold.ttf') format('truetype');
-	font-weight: 700;
-	font-style: normal;
-}
+
 
 * {
 	margin: 0;

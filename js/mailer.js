@@ -1,6 +1,9 @@
 document.querySelector('form').addEventListener('submit', function (event) {
     event.preventDefault();
 
+    const spinner = document.querySelector('.spinnerborder');
+    spinner.classList.remove('d-none');
+
     const formData = new FormData(event.target);
     const email = formData.get('email');
     const message = formData.get('message');
@@ -26,11 +29,13 @@ document.querySelector('form').addEventListener('submit', function (event) {
         } else {
             alert(data.message || 'Something went wrong. Please try again later.');
         }
+        spinner.classList.add('d-none');
         document.getElementById('email').value = '';
         document.getElementById('message').value = '';
     })
     .catch(error => {
         console.error('Error:', error);
         alert('Failed to send email. Please try again later.');
+        spinner.classList.add('d-none');
     });
 });
