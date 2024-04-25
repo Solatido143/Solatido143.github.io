@@ -370,3 +370,16 @@ h1 {
         display: none;
     }
 }
+
+.services {
+    background: #111;
+}
+
+.providing {
+    background: #000;
+}
+
+.card {
+    background: #111;
+    color: white;
+}
