@@ -26,7 +26,7 @@ function filterProducts(category) {
   });
 
   // Paginate the filtered products
-  const pageSize = 3;
+  const pageSize = 8;
   const totalPages = Math.ceil(filteredProducts.length / pageSize);
   const currentPage = 0;
 
@@ -95,12 +95,24 @@ document.querySelectorAll('.products-container .product').forEach(product =>{
 });
 
 // Adding click event to close buttons in previews
+// Adding click event to close buttons in previews
 previewBox.forEach(close =>{
   close.querySelector('.fa-times').onclick = () =>{
     close.classList.remove('active');
     previewContainer.style.display = 'none';
   };
 });
+
+// Adding click event to close previews when clicking outside of previews
+previewContainer.addEventListener('click', function(event) {
+  if (!event.target.closest('.preview')) {
+    previewBox.forEach(preview => {
+      preview.classList.remove('active');
+    });
+    previewContainer.style.display = 'none';
+  }
+});
+
 
 // Initial setup
 filterProducts('tab-all');

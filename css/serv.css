@@ -6,7 +6,6 @@
 
 .gallery-wrapper {
     margin: 0;
-    font-family: 'Times New Roman', Times, serif;
     font-size: 14px;
     font-weight: 400;
     line-height: normal;
@@ -162,6 +161,7 @@ h1 {
 .gallery-wrapper .content-gallery .gallery.full .swiper-next-button em,
 .gallery-wrapper .content-gallery .gallery.full .swiper-prev-button em {
     font-size: 68px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .gallery-wrapper .content-gallery .gallery.full .swiper-next-button.swiper-button-disabled,
