@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400i');
+@media screen and (max-width: 768px) {
+    .container-fluid .row {
+        margin: 20px;
+    }
+
+    .container2 {
+        padding: 50px;
+    }
+}
+
+body {
+    background: #111;
+}
+
+.container2 {
+    background-size: cover;
+    color: #fff;
+    padding: 5% 5%;
+    padding-bottom: 40px;
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+
+.container2 .contactus {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    border: 2px solid #fff;
+    border-radius: 15px;
+}
+
+.container2 .contactus h1 {
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.item {
+    margin-bottom: 15px;
+}
+
+.item input[type="text"],
+.item textarea {
+    width: 100%;
+    background: none;
+    border: 0;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    padding: 10px 0 15px 0;
+    box-sizing: border-box;
+}
+
+.item.name_email {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item.name_email input[type="text"] {
+    width: calc(50% - 5px);
+}
+
+.item textarea {
+    height: 100px;
+    resize: none;
+}
+
+.btn {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn button {
+    display: block;
+    width: 125px;
+    text-align: center;
+    height: 45px;
+    color: #ffff;
+    background-color: #ff1414;
+    transition: all 0.5s linear;
+}
+
+.btn button:hover {
+    background: #000;
+    color: #fff;
+}
+
+.bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+.footer-bottom {
+    font-size: 14px;
+}
+
+.footer-bottom a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+.container2 .contactus {
+    /* Existing styles */
+    transition: border-color 0.3s ease;
+}
+
+.container2 .contactus:hover {
+    border-color: #ff1414;
+}

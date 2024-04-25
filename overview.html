@@ -23,43 +23,7 @@
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/footer.css">
-
-    <style>
-        .overview {
-            background: #111;
-        }
-
-        .container-overlay {
-            background-color: transparent;
-            /* Set background to transparent */
-            border: 2px solid white;
-            /* Add white border */
-            padding: 20px;
-            border-radius: 15px;
-            margin-left: 13px;
-            margin-right: 13px;
-        }
-
-        .card {
-            background-color: #000;
-            color: white;
-        }
-
-        .crds>* {
-            margin: 20px auto;
-        }
-
-        :root {
-            --header-height: 82px;
-        }
-
-        @media (min-width: 992px) {
-            #companyOverview {
-                height: calc(100vh - var(--header-height));
-            }
-        }
-    </style>
-
+    <link rel="stylesheet" href="css/overview.css">
 </head>
 
 <body>
@@ -88,13 +52,9 @@
         </div>
     </header>
     
-    <!-- OverView -->
-    <div class="overview py-3" id="companyOverview">
-        <!-- Container -->
+    <div class="overview py-3 d-flex justify-content-center align-items-center" id="companyOverview">
         <div class="container">
-
             <div class="container-overlay">
-                <!-- Text -->
                 <div class="text-center">
                     <div class="">
                         <div style="text-align: center;">
@@ -108,13 +68,12 @@
                 </div>
             </div>
 
-            <!-- Cards -->
             <div class="overview-cards">
                 <div class="container container-overview">
                     <div class="row justify-content-center align-items-center rounded-3 crds">
                         <div class="col-sm-6 col-md-6 col-lg-3">
                             <div class="card">
-                                <img src="image-content/goals.jpeg" class="card-img-top" alt="Image">
+                                <img src="image/image-content/goals.jpeg" class="card-img-top" alt="Image">
                                 <div class="card-body">
                                     <h5 class="card-title">GOALS</h5>
                                     <p class="card-text">To uphold quality, speed, dependability, and flexibility in all
@@ -124,7 +83,7 @@
                         </div>
                         <div class="col-sm-6 col-md-6 col-lg-3">
                             <div class="card">
-                                <img src="image-content/company_mission.png" class="card-img-top" alt="Image">
+                                <img src="image/image-content/company_mission.png" class="card-img-top" alt="Image">
                                 <div class="card-body">
                                     <h5 class="card-title">MISSION</h5>
                                     <p class="card-text">To drive sales growth among our expanding clientele and emerge
@@ -134,7 +93,7 @@
                         </div>
                         <div class="col-sm-6 col-md-6 col-lg-3">
                             <div class="card">
-                                <img src="image-content/vission.jpg" class="card-img-top" alt="Image">
+                                <img src="image/image-content/vission.jpg" class="card-img-top" alt="Image">
                                 <div class="card-body">
                                     <h5 class="card-title">VISION</h5>
                                     <p class="card-text">To be a known company in the Philippines that provides I.T.
@@ -144,7 +103,7 @@
                         </div>
                         <div class="col-sm-6 col-md-6 col-lg-3">
                             <div class="card">
-                                <img src="image-content/vission.jpeg" class="card-img-top" alt="Image">
+                                <img src="image/image-content/vission.jpeg" class="card-img-top" alt="Image">
                                 <div class="card-body">
                                     <h5 class="card-title">OBJECTIVES</h5>
                                     <p class="card-text">To ensure customer service satisfaction for all IT concerns,

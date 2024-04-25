@@ -79,4 +79,9 @@ body {
     }
 }
 
-
+@media (min-width: 768px) {
+	.index-text-content h1,
+	.index-text-content h3 {
+		white-space: nowrap;
+	}
+}

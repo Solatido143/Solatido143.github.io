@@ -1,0 +1,33 @@
+.overview {
+    background: #111;
+}
+
+.container-overlay {
+    background-color: transparent;
+    /* Set background to transparent */
+    border: 2px solid white;
+    /* Add white border */
+    padding: 20px;
+    border-radius: 15px;
+    margin-left: 13px;
+    margin-right: 13px;
+}
+
+.card {
+    background-color: #000;
+    color: white;
+}
+
+.crds>* {
+    margin: 20px auto;
+}
+
+:root {
+    --header-height: 82px;
+}
+
+@media (min-width: 992px) {
+    #companyOverview {
+        height: calc(100vh - var(--header-height));
+    }
+}

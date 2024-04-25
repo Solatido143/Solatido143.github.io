@@ -1,0 +1,73 @@
+h2,
+h4 {
+    padding: 0;
+    margin: 0;
+}
+
+.containerERROR {
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.error {
+    color: whitesmoke;
+}
+
+.error h2 {
+    font-size: 3rem;
+    letter-spacing: 5px;
+}
+
+.error h4 {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+.error .back {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    font-weight: 500;
+    background: #ff1414;
+    margin-top: 20px;
+    height: 30px;
+    width: 130px;
+}
+
+.error .back:hover {
+    background: black;
+    /* Change background color on hover */
+    color: white;
+    /* Change text color on hover */
+}
+
+.bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    /* Adjust background color as needed */
+    color: #fff;
+    text-align: center;
+}
+
+.footer-bottom {
+    font-size: 14px;
+    /* Adjust font size as needed */
+}
+
+/* Additional styling for links */
+.footer-bottom a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
