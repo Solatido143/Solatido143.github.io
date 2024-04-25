@@ -42,140 +42,144 @@
   <style>
     @import url('https://fonts.googleapis.com/css?family=Open+Sans:400i');
 
-/* Add this CSS for responsiveness */
-@media screen and (max-width: 768px) {
-  /* Add margin or padding to the container */
-  .container-fluid .row {
-    margin: 20px;
-    /* Add margin around the container */
-  }
+    /* Add this CSS for responsiveness */
+    @media screen and (max-width: 768px) {
 
-  .container2 {
-    padding: 50px; /* Reduce padding for smaller screens */
-  }
-}
+      /* Add margin or padding to the container */
+      .container-fluid .row {
+        margin: 20px;
+        /* Add margin around the container */
+      }
 
-.container2 {
-  background-size: cover;
-  color: #fff;
-  padding: 5% 5%; /* Adjust padding as a percentage of the container's width */
-  /* Add padding to create space around the content */
-  text-align: center;
-  /* Center content */
-  width: 100%; /* Change width to 100% */
-  height: auto; /* Change height to auto */
+      .container2 {
+        padding: 50px;
+        /* Reduce padding for smaller screens */
+      }
+    }
 
-
-}
-
-.container2 .contactus {
-  max-width: 600px;
-  width: 100%;
-  margin: 0 auto;
-  border: 2px solid #fff;
-  /* Add white border */
-  border-radius: 15px;
-  /* Add border radius */
-}
+    .container2 {
+      background-size: cover;
+      color: #fff;
+      padding: 5% 5%;
+      /* Adjust padding as a percentage of the container's width */
+      /* Add padding to create space around the content */
+      text-align: center;
+      /* Center content */
+      width: 100%;
+      /* Change width to 100% */
+      height: auto;
+      /* Change height to auto */
 
 
+    }
 
-.container2 .contactus h1 {
-  margin-bottom: 30px;
-  text-transform: uppercase;
-  text-align: center;
-  letter-spacing: 2px;
-  /* Reduce letter spacing for smaller screens */
-}
+    .container2 .contactus {
+      max-width: 600px;
+      width: 100%;
+      margin: 0 auto;
+      border: 2px solid #fff;
+      /* Add white border */
+      border-radius: 15px;
+      /* Add border radius */
+    }
 
-.item {
-  margin-bottom: 15px;
-}
 
-.item input[type="text"],
-.item textarea {
-  width: 100%;
-  background: none;
-  border: 0;
-  border-bottom: 2px solid #fff;
-  color: #fff;
-  padding: 10px 0 15px 0;
-  /* Adjust padding for better spacing */
-  box-sizing: border-box;
-  /* Ensure padding and border are included in the width */
-}
 
-.item.name_email {
-  display: flex;
-  justify-content: space-between;
-}
+    .container2 .contactus h1 {
+      margin-bottom: 30px;
+      text-transform: uppercase;
+      text-align: center;
+      letter-spacing: 2px;
+      /* Reduce letter spacing for smaller screens */
+    }
 
-.item.name_email input[type="text"] {
-  width: calc(50% - 5px);
-  /* Adjust width for better spacing */
-}
+    .item {
+      margin-bottom: 15px;
+    }
 
-.item textarea {
-  height: 100px;
-  resize: none;
-}
+    .item input[type="text"],
+    .item textarea {
+      width: 100%;
+      background: none;
+      border: 0;
+      border-bottom: 2px solid #fff;
+      color: #fff;
+      padding: 10px 0 15px 0;
+      /* Adjust padding for better spacing */
+      box-sizing: border-box;
+      /* Ensure padding and border are included in the width */
+    }
 
-.btn {
-  margin-top: 30px;
-  display: flex;
-  justify-content: center;
-}
+    .item.name_email {
+      display: flex;
+      justify-content: space-between;
+    }
 
-.btn button {
-  display: block;
-  width: 125px;
-  text-align: center;
-  height: 45px;
-  color: #ffff;
-  background-color: #ff1414;
-  transition: all 0.5s linear;
-}
+    .item.name_email input[type="text"] {
+      width: calc(50% - 5px);
+      /* Adjust width for better spacing */
+    }
 
-.btn button:hover {
-  background: #000;
-  color: #fff;
-}
+    .item textarea {
+      height: 100px;
+      resize: none;
+    }
 
-.bottom {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: #333;
-  /* Adjust background color as needed */
-  color: #fff;
-  text-align: center;
-}
+    .btn {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+    }
 
-.footer-bottom {
-  font-size: 14px;
-  /* Adjust font size as needed */
-}
+    .btn button {
+      display: block;
+      width: 125px;
+      text-align: center;
+      height: 45px;
+      color: #ffff;
+      background-color: #ff1414;
+      transition: all 0.5s linear;
+    }
 
-/* Additional styling for links */
-.footer-bottom a {
-  color: #fff;
-  text-decoration: none;
-}
+    .btn button:hover {
+      background: #000;
+      color: #fff;
+    }
 
-.footer-bottom a:hover {
-  text-decoration: underline;
-}
+    .bottom {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      /* Adjust background color as needed */
+      color: #fff;
+      text-align: center;
+    }
 
-.container2 .contactus {
-  /* Existing styles */
-  transition: border-color 0.3s ease;
-}
+    .footer-bottom {
+      font-size: 14px;
+      /* Adjust font size as needed */
+    }
 
-.container2 .contactus:hover {
-  border-color: #ff1414;
-}
+    /* Additional styling for links */
+    .footer-bottom a {
+      color: #fff;
+      text-decoration: none;
+    }
 
+    .footer-bottom a:hover {
+      text-decoration: underline;
+    }
+
+    .container2 .contactus {
+      /* Existing styles */
+      transition: border-color 0.3s ease;
+    }
+
+    .container2 .contactus:hover {
+      border-color: #ff1414;
+    }
   </style>
 
 </head>
@@ -219,12 +223,13 @@
             </div><br>
             <div class="msg">
               <div class="text">Message <span style="color: red;">*</span></div>
-              <textarea rows="2" cols="25" name="message" id="message" required style="height: 150px; width: 90%;"></textarea>
+              <textarea rows="2" cols="25" name="message" id="message" required
+                style="height: 150px; width: 90%;"></textarea>
             </div>
             <div class="btn">
               <button type="submit" style="margin-bottom: 10px; border-radius: 8px; border: none;">Send</button>
-          </div>
-          
+            </div>
+
           </form>
         </div>
       </div>
@@ -243,9 +248,5 @@
 
 </body>
 <script src="js/mailer.js"></script>
-
-
-
-
 
 </html>
