@@ -6,6 +6,13 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'GothamBookItalic';
+	src: url('fonts/GothamBook.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}
+
 ::-webkit-scrollbar {
 	width: 10px;
 	/* Adjust the width as needed */
@@ -75,6 +82,12 @@ body {
     100% {
         background: radial-gradient(circle at top left, transparent, transparent, #ff1414);
     }
+}
+
+.index-text-content h1,
+.index-text-content h3 {
+	font-family: 'Times New Roman', Times, serif;
+	
 }
 
 @media (min-width: 768px) {
